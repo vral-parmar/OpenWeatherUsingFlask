@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Now</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body, p, h1, h2, h3, h4, small{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-container w3-center">
+        <div class="w3-row w3-padding-24">
+            <div class="w3-third w3-container"></div>
+            <div class="w3-third w3-container w3-border w3-round-large">
+                <h3>Weather in <br><b>{{ location }}</b></h3>
+                <h1>{{ temp }}° C</h1>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        Min: {{ temp_min }}
+                    </div>
+                    <div class="w3-half">
+                        Max: {{ temp_max }}
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        Weather:
+                    </div>
+                    <div class="w3-half">
+                        {{ weather }}
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        Humidity:
+                    </div>
+                    <div class="w3-half">
+                        {{ humidity }}
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        Wind Speed:
+                    </div>
+                    <div class="w3-half">
+                        {{ wind }}
+                    </div>
+                </div>
+                <h4>Feels Like: {{ Feels_like }}° C</h4>
+            </div>
+            <div class="w3-third w3-container"></div>
+        </div>
+    </div>
+    <div class="w3-container w3-center">
+        <a href="http://127.0.0.1:5000/" class="w3-button w3-white w3-border">Back</a>
+    </div>
+<footer id="footer">
+        <div align="center">
+            <small>Crafted By Viral Parmar</small>
+            <br>
+            <small>
+                <a href="https://logimp.wordpress.com/" target="_blank"> Blog</a> |
+                <a href="https://medium.com/@vral_parmar" target="_blank">Medium</a> |
+                <a href="https://www.linkedin.com/in/viralparmar93/" target="_blank">Linkedin</a> |
+                <a href="https://twitter.com/Vral_parmar" target="_blank">Twitter</a> |
+                <a href="https://m.facebook.com/parmar.viral.37" target="_blank">Facebook</a> |
+                <a href="https://t.me/Vral_parmar" target="_blank">Telegram</a> |
+                <a href="https://instagram.com/vral_parmar/" target="_blank">Instagram</a> |
+                <a href="https://www.quora.com/profile/Viral-Parmar-25" target="_blank">Quora</a>
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        h1, label, input, small{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        #footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-container w3-center">
+        <div class="w3-padding-24">
+        <h1>Weather Dashboard Using Flask</h1>
+            <div class="w3-container">
+                <form method="post" action="{{ url_for('render_results') }}">
+                    <label>Location Zip Code:</label>
+                    <input type="number" class="w3-border w3-round" name="zipcode">
+                    <input type="submit" class="w3-button w3-light-grey w3-small" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+<footer id="footer">
+        <div align="center">
+            <small>Crafted By Viral Parmar</small>
+            <br>
+            <small>
+                <a href="https://logimp.wordpress.com/" target="_blank"> Blog</a> |
+                <a href="https://medium.com/@vral_parmar" target="_blank">Medium</a> |
+                <a href="https://www.linkedin.com/in/viralparmar93/" target="_blank">Linkedin</a> |
+                <a href="https://twitter.com/Vral_parmar" target="_blank">Twitter</a> |
+                <a href="https://m.facebook.com/parmar.viral.37" target="_blank">Facebook</a> |
+                <a href="https://t.me/Vral_parmar" target="_blank">Telegram</a> |
+                <a href="https://instagram.com/vral_parmar/" target="_blank">Instagram</a> |
+                <a href="https://www.quora.com/profile/Viral-Parmar-25" target="_blank">Quora</a>
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
